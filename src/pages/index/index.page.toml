@@ -1,0 +1,36 @@
+[page.default]
+file = "../_default.page.toml"
+
+[page.builder]
+page = "index.page.js"
+path = "/"
+
+[page.builder.headers]
+Access-Control-Allow-Origin = '*'
+Access-Control-Allow-Methods = 'GET'
+Content-Security-Policy = 'frame-ancestors'
+
+[page.definition]
+title = 'Index'
+canonical = 'https://fustak.com'
+styles = ['../../../public/css/normalize.css', '../../../public/css/reset.css', '../../../public/css/styles.css']
+
+# [[page.definition.scripts]]
+# src = 'dist(/pages/counter.island.js)'
+# async = true
+
+[page.definition.metas]
+description = 'index page description'
+keywords = 'index keyword 1, index keyword 2'
+"og:title" = 'Page Title'
+"og:type" = ''
+"og:url" = ''
+"og:image" = ''
+"og:description" = 'Page Description'
+"og:site_name" = ''
+"twitter:card" = ''
+"twitter:site" = ''
+"twitter:title" = 'Page Title'
+"twitter:description" = 'Page Description'
+"twitter:image" = ''
+"twitter:image:alt" = ''

@@ -1,0 +1,13 @@
+[api.default]
+file = "../_default.api.toml"
+
+[api.builder]
+active = true
+service = "counter-service"
+api = "counter.add.api.js"
+method = "PUT"
+path = "/counter"
+
+[api.builder.headers]
+Access-Control-Allow-Origin = "*"
+Access-Control-Allow-Credentials = "true"
